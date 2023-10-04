@@ -8,6 +8,7 @@ import android.widget.TextView
 class MainActivity : AppCompatActivity() {
 
     var contador=0
+    //Comentario de prueba
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
