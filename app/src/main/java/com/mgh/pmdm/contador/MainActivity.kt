@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         // Referencia al TextView
-        val textViewContador=findViewById<TextView>(R.id.texto)
+        /*val textViewContador=findViewById<TextView>(R.id.texto)
 
         // Inicializamos el TextView con el contador a 0
         textViewContador.setText(contador.toString())
@@ -28,17 +28,22 @@ class MainActivity : AppCompatActivity() {
 
         // Asociaciamos una expresióin lambda como
         // respuesta (callback) al evento Clic sobre
-        // el botón
-        btAdd.setOnClickListener {
+        // el botón*/
+        binding.btAdd.setOnClickListener {
             contador++
-            textViewContador.setText(contador.toString())
+            binding.texto.setText(contador.toString())
         }
 
-        val btMenos = findViewById<Button>(R.id.btMenos)
+        //val btMenos = findViewById<Button>(R.id.btMenos)
 
-        btMenos.setOnClickListener {
+        binding.btMenos.setOnClickListener {
             contador--
-            textViewContador.setText(contador.toString())
+            binding.texto.setText(contador.toString())
+        }
+
+        binding.bReinicio.setOnClickListener {
+            contador = 0
+            binding.texto.setText(contador.toString())
         }
 
     }
