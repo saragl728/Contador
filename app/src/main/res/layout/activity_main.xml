@@ -27,18 +27,24 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.176"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/texto" />
+        app:layout_constraintTop_toBottomOf="@+id/texto"
+        app:layout_constraintVertical_bias="0.35" />
 
     <Button
         android:id="@+id/btMenos"
         android:layout_width="82dp"
         android:layout_height="67dp"
-        android:layout_marginEnd="167dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="136dp"
         android:text="-"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btAdd"
+        app:layout_constraintTop_toTopOf="@id/btAdd"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintRight_toRightOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
