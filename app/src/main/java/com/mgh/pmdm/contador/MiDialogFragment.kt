@@ -3,6 +3,7 @@ import android.app.AlertDialog
 import android.app.Dialog
 import androidx.fragment.app.DialogFragment
 import android.os.Bundle
+import android.widget.Toast
 
 class MiDialogFragment: DialogFragment()  {
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
@@ -13,6 +14,7 @@ class MiDialogFragment: DialogFragment()  {
             builder.setTitle(title).setMessage(content)
                 .setPositiveButton(android.R.string.ok)  {dialog, which ->
                     //Callback para el ok
+                    Toast.makeText(requireActivity().applicationContext, "Se ha pulsado sobre el botón OK", Toast.LENGTH_LONG).show()
                 }
                 .setNegativeButton(android.R.string.cancel) {dialog, which ->
                     //Callback para el Cancel
