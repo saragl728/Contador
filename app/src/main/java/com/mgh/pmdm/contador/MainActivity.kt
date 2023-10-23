@@ -44,6 +44,9 @@ class MainActivity : AppCompatActivity() {
         binding.bReinicio.setOnClickListener {
             contador = 0
             binding.texto.setText(contador.toString())
+            //se llama al cuadro de diálogo cuando se reinicia el contador
+            val miDialogo = MiDialogFragment()
+            miDialogo.show(supportFragmentManager, "MiDialogo")
         }
 
     }
